@@ -77,7 +77,6 @@ nav a:hover {
   color: #a7a7a7;
 }
 
-/* header "LET'S TALK" button (anchor styled as button) */
 .btn-signing {
   background-color: #a7a7a7;
   color: black;
@@ -88,8 +87,6 @@ nav a:hover {
   font-weight: 500;
   transition: background-color 0.2s ease;
   cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
 }
 
 .btn-signing:hover {
@@ -113,7 +110,7 @@ main {
 /* tag pill */
 .tag-box {
   position: relative;
-  width: 22rem;
+  width: 18rem;
   height: 2.5rem;
   border-radius: 50px;
   background: linear-gradient(to right, #656565, #7f42a7, #6600c5);
@@ -140,7 +137,6 @@ main {
   transition: 0.5s ease;
   font-size: 0.9rem;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
 }
 
 .tag-box .tag:hover {
@@ -149,7 +145,7 @@ main {
 
 /* main heading + text */
 .content h1 {
-  font-size: 3.6rem;
+  font-size: 4rem;
   font-weight: 600;
   letter-spacing: 0.1rem;
   margin: 2rem 0 1rem;
@@ -158,7 +154,7 @@ main {
 }
 
 .description {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   letter-spacing: 0.05rem;
   max-width: 35rem;
   color: gray;
@@ -199,16 +195,10 @@ main {
   letter-spacing: 0.12em;
   transition: background-color 0.2s ease;
   text-transform: uppercase;
-  display: inline-block;
 }
 
 .btn-signing-main:hover {
   background-color: gray;
-}
-
-/* Placeholder sections (you can style later) */
-section {
-  padding: 3rem 0;
 }
 
 /* ---------- RESPONSIVE ---------- */
@@ -263,7 +253,7 @@ section {
   }
 
   .tag-box {
-    width: 15rem;
+    width: 11rem;
     height: 2.2rem;
   }
 
