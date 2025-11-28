@@ -10,49 +10,8 @@ body {
 
   background-color: black;
   color: #e7e7e7;
-  min-height: 200vh;
+  min-height: 100vh;
   line-height: 1.5;
-}
-
-/* ---------- LIQUID GLASS HERO ---------- */
-
-.hero-liquid {
-  position: sticky;
-  top: 0;
-  height: 100vh;          /* full screen */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  z-index: 1;
-  overflow: hidden;
-}
-
-.liquid-frame {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-/* tag positioned over hero */
-.hero-liquid .tag-box {
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-/* ---------- CONTENT AFTER HERO ---------- */
-
-.hero-content {
-  margin-top: 100vh;      /* starts after full-screen hero */
-  display: flex;
-  justify-content: center;
-  padding: 4rem 1rem 6rem;
-}
-
-.hero-content .content {
-  max-width: 40rem;
 }
 
 /* background decorations */
@@ -134,9 +93,13 @@ nav a:hover {
   background-color: white;
 }
 
-/* MAIN WRAPPER (kept simple now) */
+/* HERO AREA */
 main {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center */
+  align-items: center;     /* horizontal center */
+  min-height: calc(90vh - 6rem); /* full height minus header */
 }
 
 .content {
