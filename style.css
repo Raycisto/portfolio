@@ -494,21 +494,53 @@ main {
   font-size: 0.9rem;
   color: #c0c0c0;
 }
+.social-links {
+  display: flex;
+  flex-direction: column;  /* stack IG and GitHub vertically */
+  gap: 0.4rem;
+  margin-top: 1rem;
+}
+
 .icon-link {
-  display: inline-block;
-  margin-right: 12px;
+  display: inline-flex;
+  align-items: center;      /* centers icon + text vertically */
+  gap: 0.4rem;
+  text-decoration: none;
   transition: transform 0.2s ease;
 }
 
 .icon-link:hover {
-  transform: scale(1.1);
+  transform: scale(1.03);
 }
 
 .icon {
-  width: 32px;
-  height: 32px;
-  fill: white;
+  width: 24px;
+  height: 24px;
 }
+
+.icon-text {
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+}
+.gradient-text {
+  background: linear-gradient(90deg, #ffffff, #9b5bff, #ff4ecd, #ffffff);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: textGradient 5s linear infinite;
+}
+
+@keyframes textGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
+}
+
+
 
 
 
