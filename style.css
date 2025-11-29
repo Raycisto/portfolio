@@ -225,6 +225,8 @@ main {
 
   header {
     padding: 0.75rem 0;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   nav {
@@ -237,12 +239,14 @@ main {
 
   header h1 {
     font-size: 1.6rem;
+    margin-bottom: 0.25rem;
   }
 
   .btn-signing {
     padding: 0.4rem 1.1rem;
     font-size: 0.75rem;
     border-radius: 999px;
+    align-self: flex-end;
   }
 
   main {
