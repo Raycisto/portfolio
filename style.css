@@ -530,6 +530,29 @@ main {
   color: transparent;
   animation: textGradient 5s linear infinite;
 }
+.bg-video {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+  opacity: 0.45;          /* make it subtle */
+}
+
+/* optional: remove old gradient image rules if not used */
+.image-gradient {
+  display: none;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(255,255,255,0.12), rgba(0,0,0,0.85));
+  z-index: -1;
+}
+
+
 
 @keyframes textGradient {
   0% {
